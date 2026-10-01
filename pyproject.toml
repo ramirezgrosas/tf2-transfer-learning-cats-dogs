@@ -1,13 +1,20 @@
 [project]
 name = "tf2-transfer-learning-cats-dogs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Cats vs dogs image classifier with transfer learning: a CNN trained from scratch compared against a pretrained MobileNetV2 feature extractor, built with TensorFlow 2 (Keras)."
 readme = "README.md"
 authors = [
     { name = "Diego Ramirez Rosas", email = "ramirezgrosas@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.21.0",
+]
 
 [project.scripts]
 tf2-transfer-learning-cats-dogs = "tf2_transfer_learning_cats_dogs:main"
